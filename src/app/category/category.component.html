@@ -6,7 +6,7 @@
         <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 <div class="container main-login main-center">
-    <h2>Add Category</h2>
+    <h2 style="font-family:cursive;text-align: center">Add Category</h2>
    
     <div class="form-group">
         <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
@@ -36,17 +36,17 @@
               [attr.disabled]="!category.isEdit ? '' : null"/>
             </td>
             <td>
-                <button *ngIf="!category.isEdit" class="btn btn-primary a-btn-slide-text" 
+                <button *ngIf="!category.isEdit" class="btn btn-primary a-btn-slide-text" style="background-color:#852890" 
                 (click)="editCategory(category)">
                     <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                    <span><strong>Edit</strong></span>            
+                    <span ><strong>Edit</strong></span>            
                 </button>
-                <button *ngIf="category.isEdit" class="btn btn-primary a-btn-slide-text" 
+                <button *ngIf="category.isEdit" class="btn btn-primary a-btn-slide-text" style="background-color:green" 
                 (click)="updateCategory(category)">
                         <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
                         <span><strong>Save</strong></span>            
                 </button>
-                <button class="btn btn-primary a-btn-slide-text" (click)="deleteCategory(category.categoryId)">
+                <button class="btn btn-primary a-btn-slide-text" style="background-color:red"(click)="deleteCategory(category.categoryId)">
                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     <span><strong>Delete</strong></span>            
                 </button>

@@ -41,7 +41,7 @@ export class TrackComponent implements OnInit {
 
   colors = [
     { 
-      backgroundColor: 'rgba(30, 169, 224, 0.8)'
+      backgroundColor: 'rgb(255, 102, 255)'
     }
   ]
 
